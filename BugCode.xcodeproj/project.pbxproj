@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0898F1B925FE1BD300AE9056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898F1B825FE1BD300AE9056 /* AppDelegate.swift */; };
+		0898F1BB25FE1BD300AE9056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898F1BA25FE1BD300AE9056 /* ViewController.swift */; };
+		0898F1BD25FE1BD300AE9056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0898F1BC25FE1BD300AE9056 /* Assets.xcassets */; };
+		0898F1C025FE1BD300AE9056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0898F1BE25FE1BD300AE9056 /* Main.storyboard */; };
+		0898F1CE25FE1C2400AE9056 /* KaraokeSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898F1C925FE1C2400AE9056 /* KaraokeSongView.swift */; };
+		0898F1CF25FE1C2400AE9056 /* KaraokeSongView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0898F1CA25FE1C2400AE9056 /* KaraokeSongView.xib */; };
+		0898F1D225FE1C2400AE9056 /* KaraokeSongDragDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898F1CD25FE1C2400AE9056 /* KaraokeSongDragDestinationView.swift */; };
+		0898F1D525FE1CBD00AE9056 /* NSDraggingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898F1D425FE1CBD00AE9056 /* NSDraggingInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0898F1B525FE1BD300AE9056 /* BugCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0898F1B825FE1BD300AE9056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0898F1BA25FE1BD300AE9056 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0898F1BC25FE1BD300AE9056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0898F1BF25FE1BD300AE9056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0898F1C125FE1BD300AE9056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0898F1C225FE1BD300AE9056 /* BugCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BugCode.entitlements; sourceTree = "<group>"; };
+		0898F1C925FE1C2400AE9056 /* KaraokeSongView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KaraokeSongView.swift; path = KaraokeSongView/KaraokeSongView.swift; sourceTree = "<group>"; };
+		0898F1CA25FE1C2400AE9056 /* KaraokeSongView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KaraokeSongView.xib; path = KaraokeSongView/KaraokeSongView.xib; sourceTree = "<group>"; };
+		0898F1CD25FE1C2400AE9056 /* KaraokeSongDragDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KaraokeSongDragDestinationView.swift; path = KaraokeSongView/KaraokeSongDragDestinationView.swift; sourceTree = "<group>"; };
+		0898F1D425FE1CBD00AE9056 /* NSDraggingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDraggingInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0898F1B225FE1BD300AE9056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0898F1AC25FE1BD300AE9056 = {
+			isa = PBXGroup;
+			children = (
+				0898F1B725FE1BD300AE9056 /* BugCode */,
+				0898F1B625FE1BD300AE9056 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0898F1B625FE1BD300AE9056 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0898F1B525FE1BD300AE9056 /* BugCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0898F1B725FE1BD300AE9056 /* BugCode */ = {
+			isa = PBXGroup;
+			children = (
+				0898F1CD25FE1C2400AE9056 /* KaraokeSongDragDestinationView.swift */,
+				0898F1C925FE1C2400AE9056 /* KaraokeSongView.swift */,
+				0898F1CA25FE1C2400AE9056 /* KaraokeSongView.xib */,
+				0898F1B825FE1BD300AE9056 /* AppDelegate.swift */,
+				0898F1BA25FE1BD300AE9056 /* ViewController.swift */,
+				0898F1BC25FE1BD300AE9056 /* Assets.xcassets */,
+				0898F1BE25FE1BD300AE9056 /* Main.storyboard */,
+				0898F1C125FE1BD300AE9056 /* Info.plist */,
+				0898F1C225FE1BD300AE9056 /* BugCode.entitlements */,
+				0898F1D425FE1CBD00AE9056 /* NSDraggingInfo.swift */,
+			);
+			path = BugCode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0898F1B425FE1BD300AE9056 /* BugCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0898F1C525FE1BD300AE9056 /* Build configuration list for PBXNativeTarget "BugCode" */;
+			buildPhases = (
+				0898F1B125FE1BD300AE9056 /* Sources */,
+				0898F1B225FE1BD300AE9056 /* Frameworks */,
+				0898F1B325FE1BD300AE9056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BugCode;
+			productName = BugCode;
+			productReference = 0898F1B525FE1BD300AE9056 /* BugCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0898F1AD25FE1BD300AE9056 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0898F1B425FE1BD300AE9056 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 0898F1B025FE1BD300AE9056 /* Build configuration list for PBXProject "BugCode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0898F1AC25FE1BD300AE9056;
+			productRefGroup = 0898F1B625FE1BD300AE9056 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0898F1B425FE1BD300AE9056 /* BugCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0898F1B325FE1BD300AE9056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0898F1BD25FE1BD300AE9056 /* Assets.xcassets in Resources */,
+				0898F1C025FE1BD300AE9056 /* Main.storyboard in Resources */,
+				0898F1CF25FE1C2400AE9056 /* KaraokeSongView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0898F1B125FE1BD300AE9056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0898F1D225FE1C2400AE9056 /* KaraokeSongDragDestinationView.swift in Sources */,
+				0898F1BB25FE1BD300AE9056 /* ViewController.swift in Sources */,
+				0898F1B925FE1BD300AE9056 /* AppDelegate.swift in Sources */,
+				0898F1CE25FE1C2400AE9056 /* KaraokeSongView.swift in Sources */,
+				0898F1D525FE1CBD00AE9056 /* NSDraggingInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0898F1BE25FE1BD300AE9056 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0898F1BF25FE1BD300AE9056 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0898F1C325FE1BD300AE9056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0898F1C425FE1BD300AE9056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0898F1C625FE1BD300AE9056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BugCode/BugCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KXHGH722Z8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BugCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.haskins.BugCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0898F1C725FE1BD300AE9056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BugCode/BugCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KXHGH722Z8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BugCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.haskins.BugCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0898F1B025FE1BD300AE9056 /* Build configuration list for PBXProject "BugCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0898F1C325FE1BD300AE9056 /* Debug */,
+				0898F1C425FE1BD300AE9056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0898F1C525FE1BD300AE9056 /* Build configuration list for PBXNativeTarget "BugCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0898F1C625FE1BD300AE9056 /* Debug */,
+				0898F1C725FE1BD300AE9056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0898F1AD25FE1BD300AE9056 /* Project object */;
+}

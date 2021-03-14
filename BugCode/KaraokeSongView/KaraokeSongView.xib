@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.AVKitIBPlugin" version="17701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="KaraokeSongView">
+            <connections>
+                <outlet property="currentTimeView" destination="thO-nR-or1" id="1Qs-wO-uCx"/>
+                <outlet property="dragDestination" destination="1c9-ib-aHu" id="62j-AE-qHz"/>
+                <outlet property="playPauseButton" destination="Rdc-Jg-eF6" id="NyL-OI-Coq"/>
+                <outlet property="rootView" destination="c22-O7-iKe" id="10k-Ua-huu"/>
+                <outlet property="showInFinder" destination="puO-Um-aD1" id="opX-y6-Ifv"/>
+                <outlet property="songDisplayView" destination="Eth-PN-nAo" id="Qdc-2L-1IP"/>
+                <outlet property="songLengthView" destination="23d-xI-xf5" id="Drc-Vo-c0w"/>
+                <outlet property="songPositionView" destination="PwN-4z-E1P" id="fj6-d1-iJg"/>
+                <outlet property="songTitleView" destination="cZR-q4-MVE" id="sP7-rk-cYd"/>
+                <outlet property="songVideoView" destination="nvj-BY-PYK" id="HYp-XX-qeG"/>
+                <outlet property="unpackProgress" destination="8Ma-N3-eGS" id="lg1-AU-oRC"/>
+                <outlet property="volumeSlider" destination="Lj4-kB-nBS" id="xQb-gY-ief"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="340"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lj4-kB-nBS">
+                    <rect key="frame" x="448" y="27" width="24" height="255"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" maxValue="10" doubleValue="5" tickMarkPosition="left" numberOfTickMarks="11" allowsTickMarkValuesOnly="YES" sliderType="linear" id="7XY-p0-iCX"/>
+                    <connections>
+                        <action selector="volumeChanged:" target="-2" id="S6O-rX-WYB"/>
+                    </connections>
+                </slider>
+                <avPlayerView hidden="YES" fixedFrame="YES" controlsStyle="none" translatesAutoresizingMaskIntoConstraints="NO" id="nvj-BY-PYK">
+                    <rect key="frame" x="0.0" y="0.0" width="432" height="280"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </avPlayerView>
+                <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eth-PN-nAo">
+                    <rect key="frame" x="0.0" y="0.0" width="432" height="280"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="gt2-N2-Kqf"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23d-xI-xf5">
+                    <rect key="frame" x="431" y="292" width="41" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="00:00" id="6w6-gj-0zo">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZR-q4-MVE">
+                    <rect key="frame" x="18" y="316" width="416" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="--" id="6MA-kr-HYt">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="PwN-4z-E1P">
+                    <rect key="frame" x="53" y="289" width="372" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <button toolTip="Play / Pause" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rdc-Jg-eF6">
+                    <rect key="frame" x="440" y="0.0" width="40" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon_play" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ClB-At-BDJ">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="playPauseAction:" target="-2" id="qIN-hv-Ezw"/>
+                    </connections>
+                </button>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-SO-jwE">
+                    <rect key="frame" x="5" y="286" width="465" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thO-nR-or1">
+                    <rect key="frame" x="6" y="291" width="41" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="00:00" id="Ifm-uz-sR3">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView id="1c9-ib-aHu" customClass="KaraokeSongDragDestinationView" customModule="Games_Night" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="490" height="340"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <progressIndicator hidden="YES" fixedFrame="YES" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8Ma-N3-eGS">
+                            <rect key="frame" x="229" y="154" width="32" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </progressIndicator>
+                    </subviews>
+                </customView>
+                <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="puO-Um-aD1">
+                    <rect key="frame" x="438" y="306" width="49" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" image="NSQuickLookTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fgI-uw-HNa">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openInFinder:" target="-2" id="hXE-ir-tNQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="103" y="154"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSQuickLookTemplate" width="21" height="13"/>
+        <image name="icon_play" width="19" height="19"/>
+    </resources>
+</document>
